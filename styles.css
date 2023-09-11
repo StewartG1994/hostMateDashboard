@@ -124,7 +124,8 @@ ul>li{
     grid-row: inherit;
 }
 
-.card{
+.card, .contacts, .inbox {
+    grid-area:;
     background-color: #457b9d;
     padding: 20px;
     height: auto;
@@ -135,6 +136,7 @@ ul>li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-left: 5px solid #a8dadc;
 }
 
 .card:hover{
@@ -156,4 +158,13 @@ button
 
 button:hover{
     background-color: #a8dadc;
+}
+
+li{
+    display: flex;
+    align-items: center;
+}
+
+li >img {
+    padding-right: 5px;
 }
